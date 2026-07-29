@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mariam Amen — Flutter Developer & Third-Year Computer Science Student. Premium portfolio showcasing Flutter, Dart, mobile development, clean architecture and modern UI/UX.">
+  <meta name="keywords" content="Flutter Developer, Mobile Developer, Dart, Clean Architecture, Bloc, Cubit, Portfolio, Mariam Amen">
+  <meta name="author" content="Mariam Amen">
+  <meta property="og:title" content="Mariam Amen — Flutter Developer Portfolio">
+  <meta property="og:description" content="Flutter Developer & Third-Year Computer Science Student passionate about clean architecture, responsive mobile applications and beautiful UI.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0C2B4E">
+  <title>Mariam Amen — Flutter Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Magnetic Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Home">MA</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#" class="btn-download" id="downloadCV" aria-label="Download CV">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download CV</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HOME ===== -->
+  <section class="section home-section" id="home">
+    <div class="bg-layer">
+      <div class="gradient-mesh"></div>
+      <div class="aurora aurora-1"></div>
+      <div class="aurora aurora-2"></div>
+      <div class="aurora aurora-3"></div>
+      <div class="floating-blob blob-1"></div>
+      <div class="floating-blob blob-2"></div>
+      <div class="floating-blob blob-3"></div>
+      <div class="particle-grid" id="particleGrid"></div>
+      <div class="floating-shapes">
+        <div class="shape shape-flutter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20L8 16L12 20L16 16L20 20"/><path d="M4 12L8 8L12 12L16 8L20 12"/><path d="M12 4V20"/></svg></div>
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-diamond"></div>
+        <div class="shape shape-ring"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-dot"></div>
+      </div>
+      <div class="code-snippets" id="codeSnippets">
+        <span class="code-line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+        <span class="code-line">&lt;manifest&gt;</span>
+        <span class="code-line">  &lt;uses-permission android:name="android.permission.INTERNET"/&gt;</span>
+        <span class="code-line">  &lt;application&gt;</span>
+        <span class="code-line">    &lt;activity android:name=".MainActivity"&gt;</span>
+        <span class="code-line">      &lt;intent-filter&gt;</span>
+        <span class="code-line">        &lt;action android:name="android.intent.action.MAIN"/&gt;</span>
+        <span class="code-line">        &lt;category android:name="android.intent.category.LAUNCHER"/&gt;</span>
+        <span class="code-line">      &lt;/intent-filter&gt;</span>
+        <span class="code-line">    &lt;/activity&gt;</span>
+        <span class="code-line">&lt;/manifest&gt;</span>
+      </div>
+    </div>
+    <div class="container home-container">
+      <div class="home-left reveal">
+        <div class="profile-ring" id="profileRing">
+          <div class="ring ring-outer"></div>
+          <div class="ring ring-middle"></div>
+          <div class="ring ring-inner"></div>
+          <div class="profile-placeholder">
+            <span class="profile-initials">MA</span>
+          </div>
+          <div class="floating-icons">
+            <span class="float-icon fi-1" aria-hidden="true">S</span>
+            <span class="float-icon fi-2" aria-hidden="true">D</span>
+            <span class="float-icon fi-3" aria-hidden="true">F</span>
+            <span class="float-icon fi-4" aria-hidden="true">B</span>
+            <span class="float-icon fi-5" aria-hidden="true">R</span>
+            <span class="float-icon fi-6" aria-hidden="true">H</span>
+          </div>
+        </div>
+      </div>
+      <div class="home-right reveal">
+        <p class="home-greeting">Hello, I'm</p>
+        <h1 class="home-name">Mariam Amen</h1>
+        <div class="home-typing">
+          <span class="typing-text" id="typingText"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+        <p class="home-desc">Flutter Developer &amp; Third-Year Computer Science Student passionate about clean architecture, responsive mobile applications, beautiful UI, and modern software solutions.</p>
+        <div class="home-buttons">
+          <a href="#contact" class="btn-primary magnetic-btn" data-strength="20">Hire Me</a>
+          <a href="#projects" class="btn-outline magnetic-btn" data-strength="15">View Projects</a>
+        </div>
+        <div class="home-socials">
+          <a href="https://github.com/MariamAmen" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/mariamamen" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://wa.me/201287904611" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="scrollIndicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Get To Know</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="about-text reveal">
+          <p class="about-description">
+            Flutter developer specialized in Android & iOS applications using Flutter and Dart.
+            Experienced with Clean Architecture, Bloc, Cubit, REST APIs, Firebase, Git, GitHub,
+            Responsive UI and Software Engineering.
+          </p>
+          <p class="about-description">
+            Currently a Third-Year Computer Science student at Zagazig University with a passion
+            for building scalable mobile applications.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card" data-count="1">
+              <span class="stat-number"><span class="counter" data-target="1">0</span>+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card" data-count="2">
+              <span class="stat-number"><span class="counter" data-target="2">0</span>+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">Flutter</span>
+              <span class="stat-label">Expert</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">Cross-Platform</span>
+              <span class="stat-label">Building Apps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">My Academic Background</span>
+        <h2 class="section-title">My Education</h2>
+        <div class="section-divider">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="education-content reveal">
+        <div class="edu-card glass-card">
+          <div class="edu-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/></svg>
+          </div>
+          <h3 class="edu-title">Third-Year Student</h3>
+          <p class="edu-institution">Faculty of Computers and Information</p>
+          <p class="edu-university">Zagazig University</p>
+          <div class="edu-grade">
+            <span class="grade-badge">Excellent</span>
+          </div>
+          <p class="edu-desc">
+            Studying Programming, Algorithms, Data Structures, Flutter, Software Engineering
+            and Responsive UI while building practical mobile applications using Clean Architecture.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">My Professional Journey</span>
+        <h2 class="section-title">My Experience</h2>
+        <div class="section-divider">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2026 — Present</div>
+          <div class="timeline-content glass-card">
+            <h3 class="timeline-role">Flutter Developer</h3>
+            <p class="timeline-company">NTI Flutter Mobile Development Training</p>
+            <div class="timeline-skills">
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Dart</span>
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Bloc</span>
+              <span class="skill-tag">Cubit</span>
+              <span class="skill-tag">Responsive UI</span>
+              <span class="skill-tag">Animations</span>
+              <span class="skill-tag">Clean Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">My Technical Expertise</span>
+        <h2 class="section-title">My Skills</h2>
+        <div class="section-divider">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card glass-card reveal">
+          <h3 class="skill-category">Programming &amp; Concepts</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span>Dart (OOP)</span><span>95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Data Structures</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Problem Solving</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Clean Code</span><span>95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <h3 class="skill-category">Flutter Development</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span>Flutter</span><span>95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>UI/UX Design</span><span>95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Bloc</span><span>92%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Cubit</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <h3 class="skill-category">Design Patterns</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span>MVVM</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item editable-placeholder"><span class="placeholder-text">Add skill...</span></div>
+          <div class="skill-item editable-placeholder"><span class="placeholder-text">Add skill...</span></div>
+          <div class="skill-item editable-placeholder"><span class="placeholder-text">Add skill...</span></div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <h3 class="skill-category">Firebase</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span>Firestore</span><span>88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Firebase Storage</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <h3 class="skill-category">Local Storage</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span>SQLite</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">My Recent Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-divider">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card glass-card tilt-card reveal">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3-3m0 0l3 3m-3-3v8"/><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
+              <span>To-Do App</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">To-Do App</h3>
+            <p class="project-desc">Modern Flutter ToDo application supporting task management, CRUD operations, Clean Architecture and responsive design.</p>
+            <div class="project-techs">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Bloc</span>
+              <span class="tech-tag">Hive</span>
+            </div>
+            <a href="#" class="btn-small">View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-card glass-card tilt-card reveal">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+              <span>E-Commerce App</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">E-Commerce App</h3>
+            <p class="project-desc">Complete Flutter E-Commerce application with Authentication, Product Listing, Shopping Cart, REST APIs and Order Management.</p>
+            <div class="project-techs">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">Packages</span>
+            </div>
+            <a href="#" class="btn-small">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">What People Say</span>
+        <h2 class="section-title">Testimonials</h2>
+        <div class="section-divider">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="testimonials-carousel reveal">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Her problem-solving skills are outstanding. She approaches every challenge with creativity and determination."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">OY</div>
+              <div class="author-info">
+                <span class="author-name">Omar Youssef</span>
+                <span class="author-role">Software Engineer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Mariam consistently delivers clean, scalable Flutter applications with exceptional attention to detail."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SA</div>
+              <div class="author-info">
+                <span class="author-name">Sarah Ahmed</span>
+                <span class="author-role">Flutter Team Lead</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Working with Mariam was an excellent experience. Professional, organized and highly motivated."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AK</div>
+              <div class="author-info">
+                <span class="author-name">Ahmed Khaled</span>
+                <span class="author-role">Mobile Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots" id="carouselDots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">What I Offer</span>
+        <h2 class="section-title">My Services</h2>
+        <div class="section-divider">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="service-title">Flutter Development</h3>
+          <p class="service-desc">Cross-platform Mobile Apps</p>
+        </div>
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3 class="service-title">UI/UX Design</h3>
+          <p class="service-desc">Modern User Interfaces</p>
+        </div>
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="service-title">Dart Programming</h3>
+          <p class="service-desc">Maintainable Clean Code</p>
+        </div>
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
+          </div>
+          <h3 class="service-title">REST API Integration</h3>
+          <p class="service-desc">Backend Connectivity</p>
+        </div>
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3 class="service-title">Problem Solving</h3>
+          <p class="service-desc">Strong Analytical Thinking</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-divider">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="contact-content reveal">
+        <div class="contact-card glass-card">
+          <div class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="contact-label">WhatsApp</h3>
+          <p class="contact-value">01287904611</p>
+          <a href="https://wa.me/201287904611" class="btn-contact" target="_blank" rel="noopener noreferrer">Message Me</a>
+        </div>
+        <div class="contact-card glass-card">
+          <div class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3 class="contact-label">Email</h3>
+          <p class="contact-value">mariamamen155@gmail.com</p>
+          <a href="mailto:mariamamen155@gmail.com" class="btn-contact">Send Email</a>
+        </div>
+      </div>
+      <div class="contact-socials reveal">
+        <a href="https://github.com/MariamAmen" target="_blank" rel="noopener noreferrer" class="contact-social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com/in/mariamamen" target="_blank" rel="noopener noreferrer" class="contact-social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://wa.me/201287904611" target="_blank" rel="noopener noreferrer" class="contact-social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+      <footer class="footer reveal">
+        <p>&copy; 2026 Mariam Amen</p>
+        <p class="footer-tagline">Crafted with Flutter vibes, passion and clean code.</p>
+      </footer>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
