@@ -651,22 +651,17 @@ img { max-width: 100%; display: block; }
 
 /* ---------- PROFILE IMAGE MODIFICATIONS ---------- */
 .profile-placeholder{
-    width: 280px;
-    height: 280px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    position: relative;
 }
 
-.profile-placeholder img{
+.profile-img{
     width: 100%;
     height: 100%;
-    object-fit: cover;      /* يخلي الصورة تملأ الدائرة */
-    object-position: center top; /* يركز على الوجه */
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
     display: block;
 }
